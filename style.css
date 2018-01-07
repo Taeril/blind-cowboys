@@ -1,0 +1,148 @@
+
+body {
+	padding: 0 1em;
+}
+
+.m {
+	width: 512px;
+	margin: 0 auto;
+}
+
+
+/* html, textarea, input { */
+html, textarea, input {
+	color: #A40;
+	background-color: #FFE680;
+	font-family: Verdana;
+}
+span.F,
+textarea, input, p.F {
+	width: 15em;
+	border: 0.1em solid #A40;
+	border-radius: 0.5ex;
+	padding: 0.3em;
+	display: inline-block;
+	margin: 0.5em;
+}
+textarea {
+	height: 7em;
+}
+span.F,
+p.F {
+	text-align: center;
+	width: 7em;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+p.F:hover {
+	transform: scale(1.5);
+}
+
+
+.i {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #008000;
+	border-radius: 3px;
+	padding: 4px;
+}
+
+.m {
+	float: left;
+	width: 1em;
+}
+.n {
+	float: left;
+	width: 30em;
+}
+
+.p, .c, .g, .b, .e {
+	display: block;
+	width: 64px;
+	height: 64px;
+	position: relative;
+}
+
+.N, .S, .W, .E {
+	position: absolute;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.N {
+	transform: rotate(-90deg);
+	left: 16px;
+	top: -16px;
+}
+.N:hover {
+	transform: scale(1.5) rotate(-90deg);
+}
+.S {
+	transform: rotate(90deg);
+	left: 16px;
+	top:  48px;
+}
+.S:hover {
+	transform: scale(1.5) rotate(90deg);
+}
+.W {
+	transform: scaleX(-1);
+	left: -16px;
+	top:  16px;
+}
+.W:hover {
+	transform: scale(1.5) scaleX(-1);
+}
+.E {
+	left: 48px;
+	top:  16px;
+}
+.E:hover, p.F:hover {
+	transform: scale(1.5);
+}
+
+.e > img,
+.c > img {
+	display: none;
+}
+.m > div {
+	float: left;
+	margin: 2px;
+	border: 1px solid #008000;
+	border-radius: 8px;
+}
+* {
+	z-index: 1;
+}
+.p > img {
+	display: none;
+}
+.p:hover {
+	z-index: 2;
+}
+.p:hover > img {
+	display: block;
+	z-index: 4;
+}
+
+@keyframes A {
+	from { opacity:0.75; transform: scale(0.5); }
+	to   { opacity:0;   transform: scale(1); }
+}
+.b {
+	opacity: 0;
+	z-index: 3;
+}
+.B > .b {
+	animation: A 0.2s linear 1 forwards;
+}
+
+@keyframes F {
+	0%   { background-color: #FFE680; }
+	50%  { background-color: #FFEDA3;}
+	100% { background-color: #FFE680; }
+}
+.F > div {
+	animation: F 0.2s linear 1 forwards;
+}
+
