@@ -343,7 +343,7 @@ H= (i,a) =>{
 
 s = localStorage;
 
-//ZZ = 0; // for RTCPeerConnection version
+ZZ = 0; // for RTCPeerConnection version
 ST = _ => {
 	C(D.body);
 
@@ -413,7 +413,7 @@ ST = _ => {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-	/* // RTCPeerConnection version
+	//* // RTCPeerConnection version
 
 	// WebRTC based on
 	// https://github.com/owebio/serverless-webrtc-chat
@@ -579,7 +579,7 @@ ST = _ => {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-	//* // windows version
+	/* // windows version
 
 	l = location.hash;
 	if(l) {
