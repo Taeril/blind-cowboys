@@ -1,0 +1,6 @@
+*.min*
+*.woff2
+*.wasm
+*.wast
+*.ll
+*.s
